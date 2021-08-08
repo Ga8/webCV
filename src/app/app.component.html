@@ -1,0 +1,53 @@
+<mat-sidenav-container class="mat-container" autosize>
+
+  <mat-sidenav #drawer class="mat-elevation-z8">
+    <img class="avatar mat-elevation-z8" src="../assets/me.jpg"  width='100%' />
+
+    <h4 class="name">Guibaud Gaëtan</h4>
+    <p class="designation">Software Engineer</p>
+
+    <mat-divider></mat-divider>
+    <a routerLink="/home">
+    <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    </a>
+    <a routerLink="/experiences">
+    <button mat-button class="menu-button">
+      <mat-icon>fingerprint</mat-icon>
+      <span>Experiences</span>
+    </button>
+    </a>
+    <a routerLink="/skills">
+    <button mat-button class="menu-button">
+      <mat-icon>stars</mat-icon>
+      <span>Skills</span>
+    </button>
+  </a>
+    <a routerLink="/target">
+    <button mat-button class="menu-button">
+      <mat-icon>adjust</mat-icon>
+      <span>Target</span>
+    </button>
+  </a>
+
+    <mat-divider></mat-divider>
+    <a routerLink="/contact">
+    <button mat-button class="menu-button">
+      <mat-icon>mail</mat-icon>
+      <span>Contact</span>
+    </button>
+  </a>
+  </mat-sidenav>
+
+  <div class="sidenav-content content mat-elevation-z8">
+    <button type="button" mat-button (click)="drawer.toggle()" class="burger">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <router-outlet></router-outlet>
+  </div>
+  
+  <app-footer></app-footer>
+</mat-sidenav-container>
+
