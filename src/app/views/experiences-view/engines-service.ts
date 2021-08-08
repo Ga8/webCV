@@ -50,7 +50,7 @@ export class EngineService implements OnDestroy {
     this.scene.add(this.light);
 
   const texture = new THREE.TextureLoader().load(
-    "/assets/earth_texture_2.jpg"
+    "/assets/earth.jpg"
   );
   texture.wrapS = THREE.RepeatWrapping;
   texture.wrapT = THREE.RepeatWrapping;
@@ -75,9 +75,9 @@ export class EngineService implements OnDestroy {
     //Starfield
 var starGeometry = new THREE.SphereGeometry(1000, 50, 50);
 var starMaterial = new THREE.MeshPhongMaterial({
-  map:new THREE.TextureLoader().load("/assets/galaxy_starfield.png"),
+  map:new THREE.TextureLoader().load("/assets/stars.png"),
   side: THREE.DoubleSide,
-  shininess: 0
+  shininess: 10
 });
 var starField = new THREE.Mesh(starGeometry, starMaterial);
 this.scene.add(starField);

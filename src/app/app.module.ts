@@ -11,7 +11,10 @@ import { TargetViewComponent } from './views/target-view/target-view.component';
 import { SkillsViewComponent } from './views/skills-view/skills-view.component';
 import { HomeViewComponent } from './views/home-view/home-view.component';
 import { ContactViewComponent } from './views/contact-view/contact-view.component';
-import { ExperienceModule } from './views/experiences-view/experience.module';
+
+import { TagComponent } from './common/tag/tag.component';
+import { EarthCanevaComponent } from './views/experiences-view/earth-caneva/earth-caneva.component';
+import { ExperiencesViewComponent } from './views/experiences-view/experiences-view.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,13 @@ import { ExperienceModule } from './views/experiences-view/experience.module';
     TargetViewComponent,
     SkillsViewComponent,
     HomeViewComponent,
-    ContactViewComponent
+    ContactViewComponent,
+    TagComponent,
+    ExperiencesViewComponent, 
+    EarthCanevaComponent
     
   ],
   imports: [
-    ExperienceModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

@@ -1,8 +1,10 @@
-.tag-h2 {
+.tag {
     color: grey;
     font-family: 'La Belle Aurore', cursive;
     font-size: 18px;
-    position: absolute;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: -10px;
 }
 
 .container {
@@ -15,9 +17,11 @@
 }
 .left {
     grid-area: left;
+    margin: 20px;
 }
 .right {
     grid-area: right;
+    margin: 20px;
 }
 .title {
   margin: auto auto auto auto;
@@ -35,7 +39,7 @@ h1 {
   font-weight: 700;
   font-size: 70px;
   text-shadow: 4px 5px #4dba87, 6px 7px #c6a39a;
-  opacity: 87%;
+  opacity: 95%;
 }
 h1 span {
     display: inline-block;
