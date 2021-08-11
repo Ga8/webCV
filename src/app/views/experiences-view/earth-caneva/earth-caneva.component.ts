@@ -10,8 +10,6 @@ import { EngineService } from '../engines-service';
 })
 export class EarthCanevaComponent implements OnInit {
 
-  input = "canvas";
-
   @ViewChild('rendererCanvas', { static: true })
   public rendererCanvas!: ElementRef<HTMLCanvasElement>;
 

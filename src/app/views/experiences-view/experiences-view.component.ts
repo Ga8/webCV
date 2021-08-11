@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experiences-view.component.scss']
 })
 export class ExperiencesViewComponent implements OnInit {
-
+  goHinge = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  hinge(){
+    this.goHinge = !this.goHinge;
   }
 
 }

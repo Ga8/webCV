@@ -1,27 +1,26 @@
 <div class="container">
     <div class="title">
-        <span class="tag"> &lt;H2&gt;</span>
-        <h1>Experiences</h1>
-        <span class="tag"> &lt;\H2&gt;</span>
-    
-       
+      <app-tag [isOpen]=true [tag]="' header '" [ml]="'100px'"></app-tag>
+        <app-h1 [title]="'EXPERIENCES'"></app-h1>
+        <app-tag [isOpen]=false [tag]="' header '"></app-tag>
+
     </div>
-    
+
         <div class="left">
             <div>
-                <span class="tag"> &lt;P&gt;</span>
-                <p>2021/05/01-Today</p>
+              <app-tag [isOpen]=true [tag]="' body '" ngClass="ml"></app-tag>
+              <app-tag [isOpen]=true [tag]="' P '"></app-tag>
+                <p >2021/05/01-Today</p>
                 <p>Working Airbus aircraft</p>
                 <p>Using :</p>
+              <app-tag [isOpen]=false [tag]="' P '" ></app-tag>
+              <app-tag [isOpen]=false [tag]="' body '"></app-tag>
 
-                <span class="tag"> &lt;\P&gt;</span>
             </div>
 
         </div>
 
-
-
         <div class="right"><app-earth-caneva></app-earth-caneva></div>
-  
-    
+
+
 </div>

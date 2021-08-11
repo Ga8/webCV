@@ -9,6 +9,7 @@ export class TagComponent implements OnInit {
 
 @Input('tag') tag : String;
 @Input('isOpen') isOpen : Boolean;
+@Input('ml') ml :String ;
 
   constructor() { }
 

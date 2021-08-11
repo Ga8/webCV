@@ -15,6 +15,7 @@ import { ContactViewComponent } from './views/contact-view/contact-view.componen
 import { TagComponent } from './common/tag/tag.component';
 import { EarthCanevaComponent } from './views/experiences-view/earth-caneva/earth-caneva.component';
 import { ExperiencesViewComponent } from './views/experiences-view/experiences-view.component';
+import { H1Component } from './common/h1/h1.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ExperiencesViewComponent } from './views/experiences-view/experiences-v
     ContactViewComponent,
     TagComponent,
     ExperiencesViewComponent, 
-    EarthCanevaComponent
+    EarthCanevaComponent, H1Component
     
   ],
   imports: [
