@@ -1,6 +1,8 @@
-.hinge {
-  animation: hinge;
+
+.expansion-panel {
+  background-color: #111;
 }
+
 
 .container {
    display: grid;
@@ -28,15 +30,4 @@ h1 {
   -ms-transform: matrix(1, -0.2, 0, 1, 0, 0);
   -webkit-transform: matrix(1, -0.2, 0, 1, 0, 0);
 }
-h1 {
-  font-family: "Oswald", Sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 70px;
-  text-shadow: 4px 5px #4dba87, 6px 7px #c6a39a;
-  opacity: 95%;
-}
-h1 span {
-    display: inline-block;
-    vertical-align: middle;
-  }
+

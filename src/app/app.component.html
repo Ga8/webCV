@@ -1,53 +1,61 @@
-<mat-sidenav-container class="mat-container" autosize>
+<mat-sidenav-container class="mat-container mat-app-background " [ngClass]="{'darkMode' : darkModeOn}">
 
-  <mat-sidenav #drawer class="mat-elevation-z8">
-    <img class="avatar mat-elevation-z8" src="../assets/me.jpg"  width='100%' />
+  <mat-sidenav #drawer class="mat-elevation-z8 ">
+    <img class="avatar mat-elevation-z8" src="../assets/me.jpg" width='100%' />
 
     <h4 class="name">Guibaud Gaëtan</h4>
     <p class="designation">Software Engineer</p>
 
     <mat-divider></mat-divider>
     <a routerLink="/home">
-    <button mat-button class="menu-button">
-      <mat-icon>home</mat-icon>
-      <span>Home</span>
-    </button>
+      <button mat-button class="menu-button">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
     </a>
     <a routerLink="/experiences">
-    <button mat-button class="menu-button">
-      <mat-icon>fingerprint</mat-icon>
-      <span>Experiences</span>
-    </button>
+      <button mat-button class="menu-button">
+        <mat-icon>fingerprint</mat-icon>
+        <span>Experiences</span>
+      </button>
     </a>
     <a routerLink="/skills">
-    <button mat-button class="menu-button">
-      <mat-icon>stars</mat-icon>
-      <span>Skills</span>
-    </button>
-  </a>
+      <button mat-button class="menu-button">
+        <mat-icon>stars</mat-icon>
+        <span>Skills</span>
+      </button>
+    </a>
     <a routerLink="/target">
-    <button mat-button class="menu-button">
-      <mat-icon>adjust</mat-icon>
-      <span>Target</span>
-    </button>
-  </a>
+      <button mat-button class="menu-button">
+        <mat-icon>adjust</mat-icon>
+        <span>Target</span>
+      </button>
+    </a>
 
     <mat-divider></mat-divider>
     <a routerLink="/contact">
-    <button mat-button class="menu-button">
-      <mat-icon>mail</mat-icon>
-      <span>Contact</span>
-    </button>
-  </a>
+      <button mat-button class="menu-button">
+        <mat-icon>mail</mat-icon>
+        <span>Contact</span>
+      </button>
+    </a>
+
+    <div class="flex-stretch"></div>
+
   </mat-sidenav>
 
-  <div class="sidenav-content content mat-elevation-z8">
+  <div class="sidenav-content content mat-elevation-z8  mat-app-background">
     <button type="button" mat-button (click)="drawer.toggle()" class="burger">
       <mat-icon>menu</mat-icon>
     </button>
+    <div class="dark">
+      <mat-divider [vertical]="true"></mat-divider>
+      <mat-icon class="mr-8">brightness_5</mat-icon>
+      <mat-slide-toggle [formControl]="toggleControl" class="mr-8"></mat-slide-toggle>
+      <mat-icon class="mr-8">bedtime</mat-icon>
+    </div>
     <router-outlet></router-outlet>
   </div>
-  
+
   <app-footer></app-footer>
 </mat-sidenav-container>
-

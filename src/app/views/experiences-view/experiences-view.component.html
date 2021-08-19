@@ -1,26 +1,36 @@
-<div class="container">
+<div class="container darkMode">
     <div class="title">
       <app-tag [isOpen]=true [tag]="' header '" [ml]="'100px'"></app-tag>
         <app-h1 [title]="'EXPERIENCES'"></app-h1>
         <app-tag [isOpen]=false [tag]="' header '"></app-tag>
 
     </div>
+    <mat-expansion-panel >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          This is the expansion title
+        </mat-panel-title>
+        <mat-panel-description>
 
-        <div class="left">
+
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <app-earth-caneva></app-earth-caneva>
+    </mat-expansion-panel>
+        <div >
             <div>
               <app-tag [isOpen]=true [tag]="' body '" ngClass="ml"></app-tag>
-              <app-tag [isOpen]=true [tag]="' P '"></app-tag>
+              <app-tag [isOpen]=true [tag]="' P '" [ml]="'20px'"></app-tag>
                 <p >2021/05/01-Today</p>
                 <p>Working Airbus aircraft</p>
                 <p>Using :</p>
-              <app-tag [isOpen]=false [tag]="' P '" ></app-tag>
+              <app-tag [isOpen]=false [tag]="' P '"  [ml]="'20px'"></app-tag>
               <app-tag [isOpen]=false [tag]="' body '"></app-tag>
 
             </div>
 
         </div>
 
-        <div class="right"><app-earth-caneva></app-earth-caneva></div>
 
 
 </div>

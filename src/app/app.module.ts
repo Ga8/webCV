@@ -11,11 +11,13 @@ import { TargetViewComponent } from './views/target-view/target-view.component';
 import { SkillsViewComponent } from './views/skills-view/skills-view.component';
 import { HomeViewComponent } from './views/home-view/home-view.component';
 import { ContactViewComponent } from './views/contact-view/contact-view.component';
-
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { TagComponent } from './common/tag/tag.component';
 import { EarthCanevaComponent } from './views/experiences-view/earth-caneva/earth-caneva.component';
 import { ExperiencesViewComponent } from './views/experiences-view/experiences-view.component';
 import { H1Component } from './common/h1/h1.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,9 @@ import { H1Component } from './common/h1/h1.component';
     HomeViewComponent,
     ContactViewComponent,
     TagComponent,
-    ExperiencesViewComponent, 
+    ExperiencesViewComponent,
     EarthCanevaComponent, H1Component
-    
+
   ],
   imports: [
     BrowserModule,
@@ -37,9 +39,13 @@ import { H1Component } from './common/h1/h1.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSidenavModule, 
+    MatSidenavModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatExpansionModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

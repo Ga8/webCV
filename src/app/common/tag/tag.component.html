@@ -1,4 +1,4 @@
 <p *ngIf="isOpen; else isClose" class="tag" [ngStyle]="{'margin-left': ml}">&lt;{{tag}}&gt;</p>
 
 
-<ng-template #isClose ><p class="tag">&lt;/{{tag}}&gt;</p></ng-template>
+<ng-template #isClose ><p class="tag" [ngStyle]="{'margin-left': ml}" >&lt;/{{tag}}&gt;</p></ng-template>

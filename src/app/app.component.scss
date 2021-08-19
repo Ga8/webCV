@@ -1,3 +1,42 @@
+@use '~@angular/material' as mat;
+
+@import "~@angular/material/theming";
+
+@include mat.core();
+
+$angular-primary: mat.define-palette(mat.$teal-palette, 500, 100, 900);
+$angular-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$angular-warn: mat.define-palette(mat.$red-palette);
+
+$angular-default-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $angular-primary,
+      accent: $angular-accent,
+      warn: $angular-warn,
+    ),
+  )
+);
+
+@include mat.all-component-themes($angular-default-theme);
+
+$angular-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $angular-primary,
+      accent: $angular-accent,
+      warn: $angular-warn,
+    ),
+  )
+);
+
+.darkMode {
+  @include mat.all-component-colors($angular-dark-theme);
+}
+
+
+
 
 .mat-container {
     width: 100%;
@@ -14,17 +53,17 @@
 .sidenav-content {
 
 height: 100%;
-background: #111;
+//background: #111;
 
 }
 .nav-button {
     background-color: inherit;
-    color: white;
+ //   color: white;
     border: none;
 }
 
 mat-toolbar {
-    background: black;
+  //  background: black;
     color: white;
 }
 
@@ -32,8 +71,8 @@ mat-sidenav {
     margin: 16px;
     width: 200px;
     border-right: none;
-    background: black;
-    color: white;
+ //   background: black;
+  //  color: white;
     opacity: 0.88;
     border-radius: 10px;
     padding: 16px;
@@ -42,7 +81,7 @@ mat-sidenav {
 
 .content {
     font-size: 2rem;
-    color: lightgray;
+ //   color: lightgray;
    height:95%;
 }
 
@@ -56,7 +95,7 @@ mat-sidenav-container {
     justify-content: flex-start;
     font-size: 1rem;
     background-color: inherit;
-    color: white;
+ //   color: white;
     opacity: 0.88;
     border: none;
     mat-icon {
@@ -84,7 +123,7 @@ a{
     margin-top:2px;
     margin-bottom: 10px;
     font-size: 0.8rem;
-    color: lightgrey;
+  //  color: lightgrey;
 }
 
 mat-divider {
@@ -103,4 +142,10 @@ mat-divider {
     position: fixed;
     top:15px;
     right: 35px;
+}
+
+.dark {
+  position: fixed;
+    top:15px;
+    right: 150px;
 }
