@@ -4,6 +4,17 @@
 }
 
 
+.card {
+  background: #111;
+}
+.mat-expansion-panel-header-title{
+  color: white;
+}
+mat-expansion-panel {
+  background: #111;
+  color: wheat;
+  z-index: 100;
+}
 .container {
    display: grid;
    width: 100%;

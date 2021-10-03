@@ -40,7 +40,6 @@
       </button>
     </a>
 
-    <div class="flex-stretch"></div>
 
   </mat-sidenav>
 
@@ -48,12 +47,8 @@
     <button type="button" mat-button (click)="drawer.toggle()" class="burger">
       <mat-icon>menu</mat-icon>
     </button>
-    <div class="dark">
-      <mat-divider [vertical]="true"></mat-divider>
-      <mat-icon class="mr-8">brightness_5</mat-icon>
-      <mat-slide-toggle [formControl]="toggleControl" class="mr-8"></mat-slide-toggle>
-      <mat-icon class="mr-8">bedtime</mat-icon>
-    </div>
+
+
     <router-outlet></router-outlet>
   </div>
 
