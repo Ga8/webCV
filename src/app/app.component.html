@@ -43,14 +43,14 @@
 
   </mat-sidenav>
 
-  <div class="sidenav-content content mat-elevation-z8  mat-app-background">
+ <mat-sidenav-content>
     <button type="button" mat-button (click)="drawer.toggle()" class="burger">
       <mat-icon>menu</mat-icon>
     </button>
 
 
     <router-outlet></router-outlet>
-  </div>
+ </mat-sidenav-content>
 
   <app-footer></app-footer>
 </mat-sidenav-container>

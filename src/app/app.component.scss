@@ -15,7 +15,12 @@
 
 height: 100%;
 background: #111;
+color: white;
 
+}
+.mat-sidenav-content {
+  background: #111;
+color: white;
 }
 .nav-button {
     background-color: inherit;
@@ -105,11 +110,5 @@ mat-divider {
     right: 35px;
 }
 
-.dark {
-  position: fixed;
-    top:15px;
-    right: 150px;
-}
-.card {
-  background: #111;
-}
+
+
