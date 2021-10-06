@@ -1,13 +1,24 @@
-<div class="container">
+<div class="container" (document:mousemove)="onMouseMove($event)">
+<app-sphere></app-sphere>
+
+
     <div class="title">
-
-      <app-h1 [title]="'Guibaud'"></app-h1>
-      <app-h1 [title]="'Gaëtan'"></app-h1>
-      <app-h1 [title]="'WebCV'"></app-h1>
-
+      <h1 class="animate__animated animate__backInDown  lineTitle">
+        Welcome to
+      </h1>
+      <h1 class="animate__animated animate__bounceInRight animate__slower lineTitle">
+        Guibaud
+      </h1>
+      <h1 class="animate__animated animate__bounceInLeft animate__slow lineTitle">
+        Gaëtan
+      </h1>
+        <div (click)=hinge() class="lineTitle">
+          <h1 class="animate__animated  animate__backInUp animate__slower lineTitle" [ngClass]="{'animate__hinge':goHinge}">
+            Web CV
+          </h1>
+        </div>
     </div>
 
-    <span class="tag-h2"> &lt;h2&gt;</span>
-    <span class="tag-h2"> &lt;\h2&gt;</span>
+ <app-tag [isOpen]=false [tag]="' P '"  [ml]="'20px'"></app-tag>
 
 </div>

@@ -20,6 +20,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
+import { SphereComponent } from './common/sphere/sphere.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import {MatCardModule} from '@angular/material/card';
     ContactViewComponent,
     TagComponent,
     ExperiencesViewComponent,
-    EarthCanevaComponent, H1Component
+    EarthCanevaComponent,
+    H1Component,
+    SphereComponent
 
   ],
   imports: [

@@ -13,3 +13,10 @@ h1 span {
     display: inline-block;
     vertical-align: middle;
   }
+.rotate {
+  transform: rotate(8deg);
+-moz-transform: rotate(8deg);
+-webkit-transform: rotate(8deg);
+-khtml-transform: rotate(8deg);
+-ms-transform: rotate(8deg);
+}

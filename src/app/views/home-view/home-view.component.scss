@@ -1,33 +1,46 @@
-.tag-h2 {
-    color: grey;
-    font-family: 'La Belle Aurore', cursive;
-    font-size: 18px;
-    position: absolute;
-}
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Open+Sans&display=swap');
+
+
 mat-sidenav-content{
   background-color: black;
   color: white;
 }
 .title {
-  margin: auto;
-
   margin-bottom: 10%;
-  margin-top: 10%;
+  margin-top: 12%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
+  white-space: nowrap;
+  font-family: 'Modern Antiqua';
 }
+
 h1 {
-  transform: matrix(1, -0.2, 0, 1, 0, 0);
-  -ms-transform: matrix(1, -0.2, 0, 1, 0, 0);
-  -webkit-transform: matrix(1, -0.2, 0, 1, 0, 0);
-}
-h1 {
-  font-family: "Oswald", Sans-serif;
+  display: block;
+  font-size: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+
   text-transform: uppercase;
   font-weight: 400;
   font-size: 70px;
-  text-shadow: 4px 5px #4dba87, 6px 7px #c6a39a;
+  text-shadow:  0.5px 0.5px #4dba87, 1px 1px #4dba87, 1.5px 1.5px #4dba87, 2px 2px #4dba87, 2.5px 2.5px #c6a39a, 3px 3px #c6a39a;
+
   opacity: 87%;
 }
 h1 span {
     display: inline-block;
     vertical-align: middle;
   }
+
+
+
+.lineTitle{
+  margin-right: 19%;
+  font-family: 'Modern Antiqua';
+}
