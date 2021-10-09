@@ -1,13 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Open+Sans&display=swap');
 
+.container {
+display: flex;
+flex-direction: row;
+align-content: space-around;
+justify-content: center;
+
+}
+
+
+.sphere {
+width: 45%;
+margin-top: 100px;
+margin-left:10px;
+
+}
 
 mat-sidenav-content{
   background-color: black;
   color: white;
 }
+
 .title {
   margin-bottom: 10%;
   margin-top: 12%;
+  margin-left: 80px;
   display: flex;
   flex-direction: column;
   align-content: flex-end;

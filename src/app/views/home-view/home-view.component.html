@@ -1,24 +1,27 @@
+<div>
 <div class="container" (document:mousemove)="onMouseMove($event)">
-<app-sphere></app-sphere>
-
-
-    <div class="title">
-      <h1 class="animate__animated animate__backInDown  lineTitle">
-        Welcome to
-      </h1>
-      <h1 class="animate__animated animate__bounceInRight animate__slower lineTitle">
-        Guibaud
-      </h1>
-      <h1 class="animate__animated animate__bounceInLeft animate__slow lineTitle">
-        Gaëtan
-      </h1>
-        <div (click)=hinge() class="lineTitle">
-          <h1 class="animate__animated  animate__backInUp animate__slower lineTitle" [ngClass]="{'animate__hinge':goHinge}">
-            Web CV
-          </h1>
-        </div>
+  <div  class="sphere">
+    <app-sphere></app-sphere>
+  </div>
+  <div class="title">
+    <h1 class="animate__animated animate__backInDown  lineTitle">
+     Hello I'm
+    </h1>
+    <h1 class="animate__animated animate__bounceInRight animate__slower lineTitle">
+       Gaëtan
+    </h1>
+    <h1 class="animate__animated animate__bounceInLeft animate__slow lineTitle">
+      Guibaud
+    </h1>
+    <div (click)=hinge() class="lineTitle">
+      <h3 class="animate__animated  animate__backInUp animate__slower lineTitle" [ngClass]="{'animate__hinge':goHinge}">
+        Software Engineer
+      </h3>
     </div>
+  </div>
 
- <app-tag [isOpen]=false [tag]="' P '"  [ml]="'20px'"></app-tag>
+  <app-tag [isOpen]=false [tag]="' P '" [ml]="'20px'"></app-tag>
 
+</div>
+<footer></footer>
 </div>

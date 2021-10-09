@@ -4,7 +4,8 @@
   "compilerOptions": {
     "outDir": "./out-tsc/app",
     "types": [],
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "strict": false
   },
   "files": [
     "src/main.ts",
