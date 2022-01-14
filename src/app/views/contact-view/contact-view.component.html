@@ -1,11 +1,25 @@
 <div class="container">
-    <div class="title">
+  <div class="title">
 
-      <app-h1 [title]="'CONTACT'"></app-h1>
-      <mat-card class="card  mat-app-background">Simple card</mat-card>
-    </div>
+    <app-h1 [title]="'CONTACT'"></app-h1>
+    <mat-card class="card mat-app-background">
+      <form #form="ngForm" (ngSubmit)="send(form)">
+        <mat-card-title>WRITE ME</mat-card-title>
+        <mat-card-content>
+          <p><input type="text" placeholder="Name" name="name" id="name" [(ngModel)]="formMail.name" /></p>
+          <p><input type="text" placeholder="Object" name="object" id="object" [(ngModel)]="formMail.object" /></p>
+          <p><input type="email" placeholder="Mail to respond" name="mail" id="mail" [(ngModel)]="formMail.email" /></p>
+          <p><textarea placeholder="..." id="textarea" cols="50" name="message" rows=10 width="600"
+              [(ngModel)]="formMail.message"></textarea></p>
+          <button mat-raised-button>Send</button>
+        </mat-card-content>
+      </form>
+      <p> test {{formMail | json }}</p>
+    </mat-card>
 
-    <span class="tag-h2"> &lt;h2&gt;</span>
-    <span class="tag-h2"> &lt;\h2&gt;</span>
+  </div>
+
+  <span class="tag-h2"> &lt;h2&gt;</span>
+  <span class="tag-h2"> &lt;\h2&gt;</span>
 
 </div>

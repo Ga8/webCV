@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class HomeViewComponent implements OnInit {
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e: MouseEvent) {
-    console.log(e);
+    // console.log(e);
   }
 
 
@@ -18,7 +18,7 @@ export class HomeViewComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  hinge(){
+  hinge() {
     this.goHinge = !this.goHinge;
   }
 }
